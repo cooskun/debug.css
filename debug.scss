@@ -1,0 +1,29 @@
+$red: #ef5350;
+$green: #66bb6a;
+
+@mixin debug-style($color: $red, $hover: $green) {
+  outline: 1px $color solid !important;
+
+  &:hover,
+  &:focus {
+    outline-color: $hover !important;
+  }
+}
+
+.debug,
+.debug-all *,
+.debug-children > *,
+.debug-siblings > * > * {
+  @include debug-style();
+}
+
+.debug:before,
+.debug:after,
+.debug-all *:before,
+.debug-all *:after,
+.debug-children > *:before,
+.debug-children > *:after,
+.debug-siblings > * > *:before,
+.debug-siblings > * > *:after {
+  @include debug-style();
+}
