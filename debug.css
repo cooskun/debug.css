@@ -1,0 +1,47 @@
+.debug,
+.debug-all *,
+.debug-children > *,
+.debug-siblings > * > * {
+  outline: 1px #ef5350 solid !important;
+}
+
+.debug:before,
+.debug:after,
+.debug-all *:before,
+.debug-all *:after,
+.debug-children > *:before,
+.debug-children > *:after,
+.debug-siblings > * > *:before,
+.debug-siblings > * > *:after {
+  outline: 1px #ef5350 solid !important;
+}
+
+.debug:hover,
+.debug:focus,
+.debug-all *:hover,
+.debug-all *:focus,
+.debug-children > *:hover,
+.debug-children > *:focus,
+.debug-siblings > * > *:hover,
+.debug-siblings > * > *:focus {
+  outline-color: #66bb6a !important;
+}
+
+.debug:before:hover,
+.debug:before:focus,
+.debug:after:hover,
+.debug:after:focus,
+.debug-all *:before:hover,
+.debug-all *:before:focus,
+.debug-all *:after:hover,
+.debug-all *:after:focus,
+.debug-children > *:before:hover,
+.debug-children > *:before:focus,
+.debug-children > *:after:hover,
+.debug-children > *:after:focus,
+.debug-siblings > * > *:before:hover,
+.debug-siblings > * > *:before:focus,
+.debug-siblings > * > *:after:hover,
+.debug-siblings > * > *:after:focus {
+  outline-color: #66bb6a !important;
+}
